@@ -92,7 +92,7 @@ Note: default `[count]` is `1`
 | Operator       | Description                                 | Motion                       |
 |----------------|---------------------------------------------|------------------------------|
 | `d`            | Delete the following command                | `w`, `$`, `d`, `j`, `3j`     |
-| `C`            | Change/Cut -delete and enter in insert mode | `w`, `<character>`, `e`, `b` |
+| `c`            | Change/Cut -delete and enter in insert mode | `w`, `<character>`, `e`, `b` |
 | `p`            | Put or paste                                |                              |
 | `y`            | Yank or copy                                | `w`, `e`, `b`                |
 | `<>`           | Indent                                      | `$`, `2j`, `1k`              |
@@ -107,13 +107,11 @@ Note: default `[count]` is `1`
 | `:tabnew <filename>`                  | Open a new tab                                       |
 | `:tab f <path>`                       | Open a new tab page and edit {file} in `<path>`
 | `:tabn`                               | Go to the next tab page.  Wraps around from the last to the first one
-| `:tabn`                               | Go to the next tab page.  Wraps around from the last to the first one
 | `:tabp`                               | Go to the previous tab page.  Wraps around from the first one to the last one
 | `:tabfirst`                           | Go to the first tab page
 | `:tablast`                            | Go to the last tab page
 | `:tabclose [count]`                   | Close current tab page or the one pointed by `[count]`. It fails if there is only one tab page on the screen)|
 | `:tabonly`                            | Close all other tab pages                       |
-| `:tabs`                               | List the tab pages and the windows they contain |
 | `:tabs`                               | List the tab pages and the windows they contain |
 | `:wqa`                                | Write all changed buffers and exit Vim
 
