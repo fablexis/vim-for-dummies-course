@@ -1,1 +1,4 @@
 this is a test in a text file (".txt extension")
+Line in the middle!
+This is a second line
+This is a new line just right here!
