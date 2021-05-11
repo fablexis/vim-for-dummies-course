@@ -1,0 +1,64 @@
+set number
+set relativenumber
+syntax enable 
+set clipboard=unnamedplus
+set showcmd
+set showmatch
+set sw=2
+set laststatus=2
+
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'easymotion/vim-easymotion'
+call plug#end()
+
+set number
+set relativenumber
+syntax enable 
+set clipboard=unnamedplus
+set showcmd
+set showmatch
+set sw=2
+set laststatus=2
+
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'easymotion/vim-easymotion'
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'?',
+                \ 'Staged'    :'?',
+                \ 'Untracked' :'?',
+                \ 'Renamed'   :'?',
+                \ 'Unmerged'  :'-',
+                \ 'Deleted'   :'?',
+                \ 'Dirty'     :'?',
+                \ 'Ignored'   :'?',
+                \ 'Clean'     :'??',
+                \ 'Unknown'   :'?',
+		\ }
+
+let mapleader = " "
+nmap <leader>s <Plug>(easymotion-s2)
+nmap <Leader>nt :NERDTreeFind<CR>
+nmap <leader>w :w<CR>
+nmap <leader>q :q<CR>
+
+"if you're using wsl, the below code will let you paste from vim to windows
+"clipboard
+let s:clip ='/mnt/c/Windows/System32/clip.exe'
+if executable(s:clip)
+    augroup WSLYank
+          autocmd!
+	      autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+	        augroup END
+	      endif
