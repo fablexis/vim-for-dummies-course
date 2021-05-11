@@ -15,23 +15,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
-set number
-set relativenumber
-syntax enable 
-set clipboard=unnamedplus
-set showcmd
-set showmatch
-set sw=2
-set laststatus=2
-
-call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'easymotion/vim-easymotion'
-call plug#end()
-
 colorscheme gruvbox
 set background=dark
 let g:NERDTreeGitStatusIndicatorMapCustom = {
