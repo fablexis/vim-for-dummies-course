@@ -32,7 +32,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 let mapleader = " "
 nmap <leader>s <Plug>(easymotion-s2)
-nmap <Leader>nt :NERDTreeFind<CR>
+nmap <leader>nt :NERDTreeFind<CR>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 
