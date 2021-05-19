@@ -132,6 +132,8 @@ The following commands are avaiable in `visual` mode
 
 You can find any number of plugin just searching on google, but there is an interesting web page called [Vim Awesome](https://vimawesome.com/) where you can search and find almost any kind of plugin you can imagine for vim, including examples and direct references related to the docs, the stats and the current state (deprecated/up-to-date).
 
+Note: We're using [Plug](https://github.com/junegunn/vim-plug) as our plugin manager 
+
 ## Configuration file 
 
 Feel free to download and use (and modify if you want) the `.vimrc` file we provide on this repository, which was the reference to make our presentation.
